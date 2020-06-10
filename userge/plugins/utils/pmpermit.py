@@ -115,7 +115,7 @@ async def uninvitedPmHandler(message: Message):
     if message.from_user.id in pmCounter:
         if pmCounter[message.from_user.id] > 3:
             del pmCounter[message.from_user.id]
-            await message.reply("**You were automatically blocked**")
+            await message.reply("**You were automatically blocked LOOSER**")
             Config.ALLOWED_CHATS.add(message.from_user.id)
             await message.from_user.block()
             await asyncio.sleep(1)
